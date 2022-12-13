@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "title": "What is docker?",
+        "menu1": "What is Docker?",
+        "menu2": "How containers work?",
+        "menu3": "Why use Docker?",
+        "description_menu1": {
+            "p1": "Docker to platforma typu open source, która umożliwia programistom tworzenie, wdrażanie, uruchamianie, aktualizowanie i zarządzanie  kontenerami — znormalizowanymi, wykonywalnymi komponentami, które łączą kod źródłowy aplikacji z bibliotekami systemu operacyjnego (OS) i zależnościami wymaganymi do uruchomienia tego kodu w dowolnym środowisku.",
+            "p2": "Kontenery upraszczają tworzenie i dostarczanie aplikacji rozproszonych. Stały się one coraz bardziej popularne, ponieważ organizacje przechodzą na programowanie natywne w chmurze i hybrydowe środowiska wielochmurowe . Deweloperzy mogą tworzyć kontenery bez Dockera, pracując bezpośrednio z możliwościami wbudowanymi w Linuksa i inne systemy operacyjne. Ale Docker sprawia, że konteneryzacja jest szybsza, łatwiejsza i bezpieczniejsza. ",
+            "p3": "Docker odnosi się również do Docker, Inc., firmy, która sprzedaje komercyjną wersję Dockera, oraz do projektu open source Docker, do którego Docker, Inc i wiele innych wnoszą swój wkład inne organizacje i osoby prywatne."
+        },
+        "description_menu2": {
+            "p1": "Kontenery są możliwe dzięki funkcjom izolacji procesów i wirtualizacji wbudowanym w jądro Linuksa. Możliwości te — takie jak grupy kontrolne (Cgroups) do przydzielania zasobów między procesami oraz przestrzenie nazw do ograniczania dostępu procesów lub widoczności innych zasobów lub obszarów systemu — umożliwiają wielu komponentom aplikacji współdzielenie zasobów pojedynczej instancji hosta operacyjnego systemu w podobny sposób, w jaki hiperwizor umożliwia wielu maszynom wirtualnym współdzielenie procesora, pamięci i innych zasobów pojedynczego serwera sprzętowego.",
+            "p2": "W rezultacie technologia kontenerów oferuje wszystkie funkcje i zalety maszyn wirtualnych — w tym izolację aplikacji, opłacalną skalowalność i możliwość jednorazowego użytku — a także ważne dodatkowe korzyści:",
+            "p3": "Mniejsza waga : w przeciwieństwie do maszyn wirtualnych kontenery nie przenoszą ładunku całej instancji systemu operacyjnego i hiperwizora. Obejmują one tylko procesy i zależności systemu operacyjnego niezbędne do wykonania kodu. Rozmiary kontenerów są mierzone w megabajtach (w porównaniu z gigabajtami w przypadku niektórych maszyn wirtualnych), umożliwiają lepsze wykorzystanie pojemności sprzętu i krótsze czasy uruchamiania.",
+            "p4": "Większa produktywność programistów : Konteneryzowane aplikacje można napisać raz i uruchamiać w dowolnym miejscu. W porównaniu z maszynami wirtualnymi kontenery są szybsze i łatwiejsze we wdrażaniu, udostępnianiu i ponownym uruchamianiu. Dzięki temu idealnie nadają się do stosowania w potokach ciągłej integracji i ciągłego dostarczania (CI/CD) oraz lepiej pasują do zespołów programistycznych stosujących praktyki Agile i DevOps.",
+            "p5": "Większa wydajność zasobów : dzięki kontenerom programiści mogą uruchamiać kilka razy więcej kopii aplikacji na tym samym sprzęcie niż na maszynach wirtualnych. Może to zmniejszyć wydatki na chmurę."
+        },
+        "description_menu3": {
+            "p1": "Przede wszystkim w 2008 roku w jądrze Linuksa zaimplementowano LinuXContainers (LXC), w pełni umożliwiając wirtualizację pojedynczej instancji Linuksa. Chociaż LXC jest nadal używany, dostępne są nowsze technologie wykorzystujące jądro Linuksa. Ubuntu, nowoczesny system operacyjny Linux typu open source, również zapewnia taką możliwość.",
+            "p2": "Docker umożliwia programistom dostęp do tych natywnych możliwości konteneryzacji za pomocą prostych poleceń i automatyzację ich za pomocą oszczędzającego pracę interfejsu programowania aplikacji (API). W porównaniu do LXC, Docker oferuje:",
+            "p3": "Ulepszona i bezproblemowa przenośność kontenerów : podczas gdy kontenery LXC często odwołują się do konfiguracji specyficznych dla maszyny, kontenery Docker działają bez modyfikacji na dowolnym komputerze stacjonarnym, centrum danych i środowisku chmurowym.",
+            "p4": "Jeszcze lżejsze i bardziej szczegółowe aktualizacje : dzięki LXC wiele procesów można połączyć w jednym kontenerze. Dzięki temu możliwe jest zbudowanie aplikacji, która może działać, gdy jedna z jej części zostanie usunięta w celu aktualizacji lub naprawy.",
+            "p5": "Automatyczne tworzenie kontenerów : Docker może automatycznie zbudować kontener na podstawie kodu źródłowego aplikacji.",
+            "p6": "Wersjonowanie kontenerów : Docker może śledzić wersje obrazu kontenera, przywracać poprzednie wersje oraz śledzić, kto stworzył wersję i jak. Może nawet przesyłać tylko różnice między istniejącą wersją a nową.",
+            "p7": "Ponowne wykorzystanie kontenerów : istniejące kontenery mogą być używane jako obrazy podstawowe — zasadniczo jak szablony do tworzenia nowych kontenerów.",
+            "p8": "Współdzielone biblioteki kontenerów : programiści mogą uzyskiwać dostęp do rejestru typu open source zawierającego tysiące kontenerów przesłanych przez użytkowników.",
+            "p9": "Dzisiaj konteneryzacja Dockera działa również z systemami Microsoft Windows i Apple MacOS. Deweloperzy mogą uruchamiać kontenery Docker w dowolnym systemie operacyjnym, a większość wiodących dostawców usług w chmurze, w tym Amazon Web Services (AWS), Microsoft Azure i IBM Cloud, oferuje określone usługi pomagające programistom w tworzeniu, wdrażaniu i uruchamianiu aplikacji kontenerowych za pomocą Dockera."
+        }
+    },
+    {
+        "id": 2,
+        "title": "What is a container?",
+        "what_is_container": {
+            "p1": "Kontener jest ujednoliconą kolekcją warstw składająca się z warstw tylko do odczytu pochodzących z obrazu kontenera i pojedynczej warstwy do odczytu i zapisu. Warstwa do odczytu i zapisu umożliwia działanie procesów uruchamianych w kontenerze.",
+            "p2": "Przeznaczeniem kontenera jest wykonywanie pojedynczego zadania (procesu). Kontener może znajdować się w jednym ze stanów:",
+            "p3": "„created” – Kontener, który został stworzony, ale jeszcze nie uruchomiony",
+            "p4": "„restarting” – Kontener w trakcie ponownego uruchamiania swojego procesu",
+            "p5": "„up” – Kontener wykonujący swój proces",
+            "p6": "„paused” – Kontener, którego proces został wstrzymany",
+            "p7": "„exited” – Kontener, który zakończył wykonywanie swojego procesu"
+        }
+    },
+    {
+        "id": 3,
+        "title": "What is a container image?"
+    },
+    {
+        "id": 4,
+        "title": "Docker architecture"
+    }
+]
