@@ -12,7 +12,7 @@ const Item = styled.div`
     img {
         max-width: 80%;
         max-height: 80%;
-        animation: 1s hideImg linear both;
+        animation: 3s hideImg linear both;
     }
     @keyframes hideCard {
         70% {

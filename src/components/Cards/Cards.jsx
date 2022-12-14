@@ -13,28 +13,29 @@ const Container = styled.div`
 `;
 
 const Cards = () => {
+    let path = window.location.hostname === 'localhost' ? '' : 'some_web';
   const [items, setItems] = useState(
     [
-      { id: 1, img: '/images/memory/spider1.jpeg', stat: '' },
-      { id: 1, img: '/images/memory/spider1.jpeg', stat: '' },
-      { id: 2, img: '/images/memory/spider2.jpeg', stat: '' },
-      { id: 2, img: '/images/memory/spider2.jpeg', stat: '' },
-      { id: 3, img: '/images/memory/spider3.jpeg', stat: '' },
-      { id: 3, img: '/images/memory/spider3.jpeg', stat: '' },
-      { id: 4, img: '/images/memory/spider4.jpeg', stat: '' },
-      { id: 4, img: '/images/memory/spider4.jpeg', stat: '' },
-      { id: 5, img: '/images/memory/spider5.jpeg', stat: '' },
-      { id: 5, img: '/images/memory/spider5.jpeg', stat: '' },
-      { id: 6, img: '/images/memory/spider6.jpeg', stat: '' },
-      { id: 6, img: '/images/memory/spider6.jpeg', stat: '' },
-      { id: 7, img: '/images/memory/spider7.jpeg', stat: '' },
-      { id: 7, img: '/images/memory/spider7.jpeg', stat: '' },
-      { id: 8, img: '/images/memory/spider8.png', stat: '' },
-      { id: 8, img: '/images/memory/spider8.png', stat: '' },
-      { id: 9, img: '/images/memory/spider9.jpeg', stat: '' },
-      { id: 9, img: '/images/memory/spider9.jpeg', stat: '' },
-      { id: 10, img: '/images/memory/spider10.jpeg', stat: '' },
-      { id: 10, img: '/images/memory/spider10.jpeg', stat: '' },
+      { id: 1, img: `${path}/images/memory/spider1.jpeg`, stat: '' },
+      { id: 1, img: `${path}/images/memory/spider1.jpeg`, stat: '' },
+      { id: 2, img: `${path}/images/memory/spider2.jpeg`, stat: '' },
+      { id: 2, img: `${path}/images/memory/spider2.jpeg`, stat: '' },
+      { id: 3, img: `${path}/images/memory/spider3.jpeg`, stat: '' },
+      { id: 3, img: `${path}/images/memory/spider3.jpeg`, stat: '' },
+      { id: 4, img: `${path}/images/memory/spider4.jpeg`, stat: '' },
+      { id: 4, img: `${path}/images/memory/spider4.jpeg`, stat: '' },
+      { id: 5, img: `${path}/images/memory/spider5.jpeg`, stat: '' },
+      { id: 5, img: `${path}/images/memory/spider5.jpeg`, stat: '' },
+      { id: 6, img: `${path}/images/memory/spider6.jpeg`, stat: '' },
+      { id: 6, img: `${path}/images/memory/spider6.jpeg`, stat: '' },
+      { id: 7, img: `${path}/images/memory/spider7.jpeg`, stat: '' },
+      { id: 7, img: `${path}/images/memory/spider7.jpeg`, stat: '' },
+      { id: 8, img: `${path}/images/memory/spider8.png`, stat: '' },
+      { id: 8, img: `${path}/images/memory/spider8.png`, stat: '' },
+      { id: 9, img: `${path}/images/memory/spider9.jpeg`, stat: '' },
+      { id: 9, img: `${path}/images/memory/spider9.jpeg`, stat: '' },
+      { id: 10, img: `${path}/images/memory/spider10.jpeg`, stat: '' },
+      { id: 10, img: `${path}/images/memory/spider10.jpeg`, stat: '' },
     ].sort(() => Math.random() - 0.5)
   );
 

@@ -8,23 +8,23 @@ import Header from './components/Header';
 import Memory from './components/Memory';
 import Puzzle from './components/Puzzle';
 
-function App() {
-
+const App = () => {
+  let path = window.location.hostname === 'localhost' ? '/' : '/some_web';
   return (
     <>
-      <Router >
+      <Router basename={path}>
         <Header />
         <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/zaki" element={<Zak />} />
-        <Route path="/hela" element={<Hela />} />
-        <Route path="/ida" element={<Ida />} />
-        <Route path="/memory" element={<Memory />} />
-        <Route path="/puzzle" element={<Puzzle />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/zaki" element={<Zak path={path} />} />
+          <Route path="/hela" element={<Hela />} />
+          <Route path="/ida" element={<Ida />} />
+          <Route path="/memory" element={<Memory />} />
+          <Route path="/puzzle" element={<Puzzle />} />
         </Routes>
       </Router>
     </>
   );
-}
+};
 
 export default App;

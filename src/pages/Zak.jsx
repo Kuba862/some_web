@@ -19,7 +19,7 @@ const Zak = () => {
 
   return (
     <>
-      <Page>
+      <Page >
         <img src={Spiderman} alt="" />
         <button onClick={() => navigate(`/memory`)}>memory</button>
         <button onClick={() => navigate(`/puzzle`)}>puzzle</button>
