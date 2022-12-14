@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/some_web/static/js/main.18f87343.js",
+    "main.js": "/some_web/static/js/main.d7424d4d.js",
     "static/media/doll.svg": "/some_web/static/media/doll.42611c0e37f2a1d8d9061c970c77fcef.svg",
     "static/media/Sonic.jpeg": "/some_web/static/media/Sonic.1c25727c5066c0bf00de.jpeg",
     "static/media/spiderman.svg": "/some_web/static/media/spiderman.81ce4f56f5ba96a993079372dd6f9614.svg",
     "index.html": "/some_web/index.html",
-    "main.18f87343.js.map": "/some_web/static/js/main.18f87343.js.map"
+    "main.d7424d4d.js.map": "/some_web/static/js/main.d7424d4d.js.map"
   },
   "entrypoints": [
-    "static/js/main.18f87343.js"
+    "static/js/main.d7424d4d.js"
   ]
 }
