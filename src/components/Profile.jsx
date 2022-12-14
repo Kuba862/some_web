@@ -11,6 +11,7 @@ const ProfileCart = styled.span`
         font-size: 2rem;
         font-weight: 700;
         margin: 25px 0;
+        text-transform: uppercase;
     }
     img {
         align-self: center;

@@ -54,13 +54,13 @@ class Home extends Component {
       <>
         <Page>
           <div className="userName">
-            <Profile userName="ZAKI" profileImage={Spiderman} />
+            <Profile userName="zaki" profileImage={Spiderman} />
           </div>
           <div className="userName">
-            <Profile userName="HELA" profileImage={Doll} bg="pink" />
+            <Profile userName="hela" profileImage={Doll} bg="pink" />
           </div>
           <div className="userName">
-            <Profile userName="IDA" profileImage={Sonic} bg="blue" />
+            <Profile userName="ida" profileImage={Sonic} bg="blue" />
           </div>
         </Page>
       </>
