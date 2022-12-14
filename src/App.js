@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <Router basename='/' >
+      <Router >
         <Header />
         <Routes>
         <Route exact path="/" element={<Home />} />

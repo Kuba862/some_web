@@ -35,18 +35,6 @@ const Page = styled.section`
 class Home extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            user: {}
-        }
-    }
-
-    componentDidMount() {
-        axios.get(`${window.location.origin}/data/users.json`)
-        .then((response) => {
-            this.setState({
-                user: response.data
-            })
-        })
     }
 
   render() {
