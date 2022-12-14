@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename='/' >
         <Header />
         <Routes>
         <Route exact path="/" element={<Home />} />
