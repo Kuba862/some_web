@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const Cards = () => {
-    let path = window.location.hostname === 'localhost' ? '' : 'https://kuba862.github.io/some_web';
+    let path = `${window.location.origin}/some_web`;
   const [items, setItems] = useState(
     [
       { id: 1, img: `${path}/images/memory/spider1.jpeg`, stat: '' },
