@@ -16,7 +16,18 @@ const CardsContainer = styled.section`
 `;
 
 const Restart = styled.button`
-
+position: relative;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 25%;
+padding: 12px 8px;
+font-size: 1.4rem;
+border: 2px solid;
+border-radius: 5px;
+font-weight: 700;
+margin-bottom: 10px;
+background-color: #fff;
 `;
 
 function shuffleCards(array) {

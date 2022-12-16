@@ -4,7 +4,7 @@ import Profile from '../components/Profile';
 import Sonic from '../images/Sonic.jpeg';
 import Doll from '../images/svg/doll.svg';
 import Spiderman from '../images/svg/spiderman.svg';
-import axios from 'axios';
+import { MEDIA_QUERIES } from '../Vars';
 
 const Page = styled.section`
   display: flex;
@@ -12,6 +12,10 @@ const Page = styled.section`
   height: 100vh;
   justify-content: space-evenly;
   background-color: #000;
+  @media ${MEDIA_QUERIES.MOBILE} {
+    flex-direction: column;
+    height: auto;
+  }
   div {
     border: 1px solid;
     flex-basis: 33%;

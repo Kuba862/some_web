@@ -11,7 +11,7 @@ const App = () => {
   let path = window.location.hostname === 'localhost' ? '/' : "";
   return (
     <>
-      <Router basename={path}>
+      <Router basename="/some_web">
         <Header />
         <Routes>
           <Route exact path={path} element={<Home />} />

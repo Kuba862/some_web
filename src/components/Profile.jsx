@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { MEDIA_QUERIES } from '../Vars';
 
 const ProfileCart = styled.span`
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    @media ${MEDIA_QUERIES.MOBILE} {
+      margin-top: 0;
+    }
     span {
         align-self: center;
         font-size: 2rem;
@@ -20,23 +24,18 @@ const ProfileCart = styled.span`
     }
 `;
 
-class Profile extends Component {
-    constructor(props) {
-        super(props);
-    }
+const Profile = ({ userName, showInput, profileImage }) => {
 
-  render() {
     return (
         <>
-        <Link to={this.props.userName} >
-      <ProfileCart onClick={this.showInput} >
-        <span className="name" >{this.props.userName}</span>
-        <img src={this.props.profileImage} alt="user image" />
+        <Link to={userName} username={userName} >
+      <ProfileCart onClick={showInput} >
+        <span className="name" >{userName}</span>
+        <img src={profileImage} alt="user image" />
       </ProfileCart>
       </Link>
       </>
     );
-  }
 }
 
 export default Profile;
