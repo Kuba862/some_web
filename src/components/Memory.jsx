@@ -11,7 +11,7 @@ const CardsContainer = styled.section`
   gap: 25px;
 @media ${MEDIA_QUERIES.MOBILE} {
     max-width: 420px;
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: repeat(4, 20%);
 }
 `;
 
@@ -121,6 +121,7 @@ const Memory = () => {
               isInactive={checkIsInactive(card)}
               isFilpped={checkIsFlipped(index)}
               isDisabled={disableAllCards}
+              cleared={clearedCards}
             />
           );
         })}
