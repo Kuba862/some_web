@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/some_web/static/js/main.5480b36c.js",
+    "main.js": "/some_web/static/js/main.75150a18.js",
     "static/media/doll.svg": "/some_web/static/media/doll.42611c0e37f2a1d8d9061c970c77fcef.svg",
     "static/media/Sonic.jpeg": "/some_web/static/media/Sonic.1c25727c5066c0bf00de.jpeg",
     "static/media/spiderman.svg": "/some_web/static/media/spiderman.81ce4f56f5ba96a993079372dd6f9614.svg",
-    "static/media/car.svg": "/some_web/static/media/car.8c2c9a7e7bdc45ea01a0d0fa1b88227f.svg",
+    "static/media/car.svg": "/some_web/static/media/car.68f66a55b2450216a16ee260d16bd65f.svg",
     "index.html": "/some_web/index.html",
-    "main.5480b36c.js.map": "/some_web/static/js/main.5480b36c.js.map"
+    "main.75150a18.js.map": "/some_web/static/js/main.75150a18.js.map"
   },
   "entrypoints": [
-    "static/js/main.5480b36c.js"
+    "static/js/main.75150a18.js"
   ]
 }
