@@ -7,9 +7,13 @@ const Road = styled.div`
   position: relative;
   display: inline-block;
   top: 100%;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
   height: 100px;
-  border-bottom: 1px solid;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 50px;
 `;
 
 const CarElement = styled.img`
@@ -25,12 +29,13 @@ class CarComponent extends Component {
   render() {
     return (
       <>
-        <Road>
+        <Road className='road' style={{backgroundColor: this.props.goodWay}} >
           <CarElement
             move={this.props.move}
-            style={{ left: this.props.move }}
+            style={{ left: this.props.move}}
             src={Car}
             alt=""
+            className='car'
           />
           <FinishFlag />
         </Road>
