@@ -6,6 +6,7 @@ import Ida from './pages/Ida';
 import Header from './components/Header';
 import Memory from './components/Memory';
 import Puzzle from './components/Puzzle';
+import MathRace from './components/MathRace';
 
 const App = () => {
   let path = window.location.hostname === 'localhost' ? '/' : "";
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/ida" element={<Ida />} />
           <Route path="/memory" element={<Memory />} />
           <Route path="/puzzle" element={<Puzzle />} />
+          <Route path="/ida/math-race" element={<MathRace />} />
         </Routes>
       </Router>
     </>
