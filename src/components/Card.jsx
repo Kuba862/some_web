@@ -10,14 +10,14 @@ const SingleCard = styled.div`
   transform-style: preserve-3d;
   border: 2px solid;
   border-radius: 5px;
-  background-color: rgba(255, 0, 0, 1);
+  /* background-color: rgba(255, 0, 0, 1);
   background-image: linear-gradient(
     45deg,
     #ff0000 0%,
     rgba(255, 82, 82, 1) 33%,
     rgba(251, 129, 131, 1) 66%,
     rgba(255, 171, 172, 1) 100%
-  );
+  ); */
   box-shadow: 4px 4px 10px 4px #a7a7a7;
   cursor: pointer;
   @media ${MEDIA_QUERIES.MOBILE} {
